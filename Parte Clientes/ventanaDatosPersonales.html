@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/cuerpoPaginas.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/ventanaDatosPersonales.css">
-    
+    <link rel="stylesheet" href="css/barraNavegacion.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/barraNavegacion.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.es-es.js" type="text/javascript"></script>
+    
 </head>
 <body>
     <!-- Contenedor Principal -->
@@ -49,7 +51,7 @@
                     <!-- Columna Barra Navegacion -->
                     <div class="columnaBarraNavegacion">
                         <nav class="nav nav-pills nav-justified" style="background-color: rgb(131, 153, 166); border-radius: none">
-                            <a class="nav-item aAumentado" href="ventanaCliclos.html">CICLOS</a>
+                            <a class="nav-item aAumentado" href="ventanaCiclos.html">CICLOS</a>
                             <a class="nav-item aAumentado" href="ventanaDatosPersonales.html">DATOS PERSONALES</a>
                             <a class="nav-item aAumentado" href="ventanaDatosAcademicos.html">DATOS ACADEMICOS</a>
                             <a class="nav-item aAumentado" href="#">DOCUMENTACION</a>
@@ -330,8 +332,8 @@
                         <!-- Fila Botones -->
                         <div class="row filaBotones">
                             
-                            <a href="ventanaCliclos.html"><button type="button" class="btn btn-primary" id="btnAtras">Atras</button></a>
-                            <a href="ventanaDatosPersonales.html"><button type="button" class="btn btn-primary" id="btnSiguiente">Siguiente</button></a>
+                            <a href="ventanaCiclos.html"><button type="button" class="btn btn-primary btnAtras" id="btnAtras">Atras</button></a>
+                            <a href="ventanaDatosAcademicos.html"><button type="button" class="btn btn-primary" id="btnSiguiente">Siguiente</button></a>
 
                         </div>
 
@@ -348,28 +350,8 @@
 
     </div>
 
-    <script>
-        // Evento de clic para cambiar el menu activo
-        $("a.aAumentado").click(function () {
-            $("a.aAumentado").not("activo").removeClass("activo").css({ "pointer-events": "auto" })
-            $(this).addClass("activo").css({ "pointer-events": "none" })
-        });
-
-        // Evento de hover, si esta activo solo pondra el color blanco
-        $("a.aAumentado").css("color", "white").hover(function () {
-            !($(this).hasClass("activo"))
-                ? $(this).addClass("aAumentadohover").css("color", "white")
-                : $(this).css("color", "white")
-        }, function () {
-            $(this).removeClass("aAumentadohover").css("color", "white");
-        });
-
-        $('#fechaNacimiento').datepicker({
-            uiLibrary: 'bootstrap4',
-            format: 'dd/mm/yyyy'
-        });
-    
-    </script>
+    <script src="js/barraNavegacion.js"></script>
+    <script src="js/ventanaDatosPersonales.js"></script>
 
 </body>
 </html>
