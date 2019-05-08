@@ -1,0 +1,124 @@
+*
+{
+    margin:0 0;
+}
+
+.contenedorPrincipal{
+    height: 100vh;
+	overflow: auto;
+}
+
+.filaPrincipal
+{
+    height: 100%;
+}
+
+.columnaIzquierda{
+    height: 100%;
+}
+
+.columnaPrincipal{
+    height: 100%;
+}
+
+.columnaDerecha{
+    height: 100%;
+}
+
+.filaLogoTitulo{
+    height: 5%;
+}
+
+.columnaLogo img{
+    height: 50px;
+    width: 270px;
+    margin-left: -16px; 
+}
+
+.columnaTitulo h2{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.filaBarraNavegacion{
+    height: 8%;
+}
+
+.columnaBarraNavegacion{
+    height: 50px;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.filaContenidoPrincipal{
+    height: 74%;
+}
+
+.contenedorContenidioPrincipal{
+    border: 2px solid rgb(131, 153, 166);
+}
+
+.filaTituloContenido{
+    height: 10%;
+}
+
+.columnaTituloContenido{
+    height: 50px;
+    margin-top: 12px;
+    margin: auto;
+}
+
+.columnaTituloContenido h2{
+    border: 2px solid black;
+    width: 600px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.filaContenido{
+    height: 82.8%;
+    margin-top: 20px;
+}
+
+
+.filaBotones{
+    margin-top: -10px;
+    float: right;
+}
+
+#btnSiguiente{
+    margin-right: 10px;
+    background-color: rgb(131, 153, 166);
+    border-color:  rgb(7, 148, 14);
+}
+
+#btnSiguiente:hover{
+    background-color:  rgb(7, 148, 14);
+}
+
+#btnAtras{
+    margin-right: 10px;
+    background-color: rgb(131, 153, 166);
+    border-color:  rgb(209, 40, 10);
+}
+
+#btnAtras:hover{
+    background-color:  rgb(209, 40, 10);
+}
+
+.formRadio{
+    margin-left: 20px; 
+}
+
+.formRadio #inputMujer{
+    margin-left: 12px; 
+}
+
+.formRadio #labelMujer{
+    margin-left: 32px; 
+}
+
+
+
+
+
