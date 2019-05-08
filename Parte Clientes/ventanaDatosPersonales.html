@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Datos Personales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cuerpoPaginas.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/ventanaDatosPersonales.css">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/barraNavegacion.css">
@@ -49,7 +51,7 @@
                         <nav class="nav nav-pills nav-justified" style="background-color: rgb(131, 153, 166); border-radius: none">
                             <a class="nav-item aAumentado" href="ventanaCliclos.html">CICLOS</a>
                             <a class="nav-item aAumentado" href="ventanaDatosPersonales.html">DATOS PERSONALES</a>
-                            <a class="nav-item aAumentado" href="#">DATOS ACADEMICOS</a>
+                            <a class="nav-item aAumentado" href="ventanaDatosAcademicos.html">DATOS ACADEMICOS</a>
                             <a class="nav-item aAumentado" href="#">DOCUMENTACION</a>
                             <a class="nav-item aAumentado" href="#">FORMA DE PAGO</a>
                             <a class="nav-item aAumentado" href="#">CONFIRMACION</a>
@@ -62,7 +64,7 @@
                 <div class="row filaContenidoPrincipal">
                     
                     <!-- Contenedor Contenido Principal -->
-                    <div class="container-fluid contenedorContenidioPrincipal">
+                    <div class="container-fluid contenedorContenidoPrincipal">
                         
                         <!-- Fila Titulo Contenido -->
                         <div class="row filaTituloContenido">
@@ -120,7 +122,7 @@
                                         <label for="">Sexo:*</label><br>
                                         <div class="formRadio">
                                             <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre" checked> 
-                                            <label class="form-check-label" id="hombre" for="hombre">Hombre
+                                            <label class="form-check-label" id="labelHombre" for="hombre">Hombre
                                             <input class="form-check-input" type="radio" name="sexo" id="inputMujer" value="mujer">
                                             <label class="form-check-label" id="labelMujer" for="mujer">Mujer
                                         </div>
@@ -362,9 +364,9 @@
             $(this).removeClass("aAumentadohover").css("color", "white");
         });
 
-        
         $('#fechaNacimiento').datepicker({
-            uiLibrary: 'bootstrap4'
+            uiLibrary: 'bootstrap4',
+            format: 'dd/mm/yyyy'
         });
     
     </script>

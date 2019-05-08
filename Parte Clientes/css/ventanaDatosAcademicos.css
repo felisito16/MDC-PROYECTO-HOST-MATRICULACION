@@ -1,0 +1,19 @@
+.columnaFormulario {
+    line-height: 50px;
+}
+
+.columnaFormulario label{
+    float: right;
+}
+
+.columnaFormulario input{
+    margin-top: 9px;
+}
+
+.columnaFormulario select{
+    margin-top: 9px;
+}
+
+.filaFormulario:first-of-type{
+    margin-top: 50px;
+}

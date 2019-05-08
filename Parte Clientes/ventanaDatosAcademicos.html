@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Datos Academicos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/cuerpoPaginas.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ventanaDatosAcademicos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/barraNavegacion.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- Contenedor Principal -->
+    <div class="container-fluid contenedorPrincipal">
+
+        <!-- Fila Principal -->
+        <div class="row filaPrincipal">
+
+            <!-- Columna Izquierda -->
+            <div class="col-xs-1 col-sm-2 col-md-2 padding-0 columnaIzquierda"></div>
+
+            <!-- Columna Principal -->
+            <div class="col-xs-1 col-sm-2 col-md-8 padding-0 columnaPrincipal">
+                
+                <!-- Fila Logo y Titulo -->
+                <div class="row filaLogoTitulo">
+
+                    <!-- Columna Logo -->
+                    <div class="col-xs-1 col-sm-2 col-md-6 padding-0 columnaLogo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+
+                    <!-- Columna Titulo -->
+                    <div class="col-xs-1 col-sm-2 col-md-6 padding-0 columnaTitulo">
+                        <h2>TITULO MATRICULACION</h2>
+                    </div>
+
+                </div>
+
+                <!-- Fila Barra de Navegacion -->
+                <div class="row filaBarraNavegacion">
+
+                    <!-- Columna Barra Navegacion -->
+                    <div class="columnaBarraNavegacion">
+                        <nav class="nav nav-pills nav-justified" style="background-color: rgb(131, 153, 166); border-radius: none">
+                            <a class="nav-item aAumentado" href="ventanaCliclos.html">CICLOS</a>
+                            <a class="nav-item aAumentado" href="ventanaDatosPersonales.html">DATOS PERSONALES</a>
+                            <a class="nav-item aAumentado" href="ventanaDatosAcademicos.html">DATOS ACADEMICOS</a>
+                            <a class="nav-item aAumentado" href="#">DOCUMENTACION</a>
+                            <a class="nav-item aAumentado" href="#">FORMA DE PAGO</a>
+                            <a class="nav-item aAumentado" href="#">CONFIRMACION</a>
+                        </nav>
+                    </div>
+                    
+                </div>
+
+                <!-- Fila Contenido Principal -->
+                <div class="row filaContenidoPrincipal">
+                    
+                    <!-- Contenedor Contenido Principal -->
+                    <div class="container-fluid contenedorContenidoPrincipal">
+                        
+                        <!-- Fila Titulo Contenido -->
+                        <div class="row filaTituloContenido">
+                    
+                            <!-- Columna Titulo Contenido -->
+                            <div class="columnaTituloContenido">
+
+                                <h2>DATOS ACADEMICOS</h2>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Fila Contenido -->
+                        <div class="row filaContenido" >
+
+                            <!-- Contenedor Contenido Formulario -->
+                            <div class="container-fluid contenedorContenidioFormulario">
+
+                                <!-- Fila Formulario 1 -->
+                                <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="centro">Centro en el que se matricula: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                        <input type="text" class="form-control" id="centro" placeholder="Centro">
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+
+                                </div>
+
+                                <!-- Fila Formulario 2 -->
+                                <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="localidad">Localidad del Centro: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                        <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+    
+                                </div>
+
+                                <!-- Fila Formulario 3 -->
+                                <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="codigo">Código del Centro: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                        <input type="text" class="form-control" id="codigo" placeholder="Código">
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+    
+                                </div>
+
+                                 <!-- Fila Formulario 4 -->
+                                 <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="curso">Curso en el que se matricula: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                        <input type="text" class="form-control" id="curso" placeholder="Curso">
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+    
+                                </div>
+
+                                <!-- Fila Formulario 5 -->
+                                <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="repetidor">Repetidor: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="si" id="si" value="si">
+                                            <label class="form-check-label" for="si">Si</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="no" id="no" value="no">
+                                            <label class="form-check-label" for="no">No</label>
+                                        </div>
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+    
+                                </div>
+
+                                <!-- Fila Formulario 6 -->
+                                <div class="row filaFormulario">
+
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-1 padding-0 form-group columnaFormulario"></div>
+
+                                    <!-- Columna Label Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                            
+                                        <label for="metodoAcceso">Métodos de acceso: </label>
+                                    
+                                    </div>
+
+                                    <!-- Columna Input Centro -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+
+                                            <select class="form-control" id="metodoAcceso">
+                                                <option hidden checked>Opciones</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                            </select>
+
+                                    </div>
+                                
+                                    <!-- Columna Vacia -->
+                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario"></div>
+    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+
+                        <!-- Fila Botones -->
+                        <div class="row filaBotones">
+                            
+                            <a href="ventanaCliclos.html"><button type="button" class="btn btn-primary" id="btnAtras">Atras</button></a>
+                            <a href="ventanaDatosPersonales.html"><button type="button" class="btn btn-primary" id="btnSiguiente">Siguiente</button></a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="col-xs-1 col-sm-2 col-md-2 padding-0 columnaDerecha"></div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
