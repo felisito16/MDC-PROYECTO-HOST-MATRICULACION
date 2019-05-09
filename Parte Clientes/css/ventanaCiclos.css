@@ -8,7 +8,7 @@
 
 .columnaEnlace p{
     margin-left: 7%; 
-    margin-top: 5px;
+    margin-top: .2vh;
     color: rgb(114, 153, 166);
     font-size: 1vw;
 }
@@ -21,9 +21,9 @@
 
 .contenedorModulo{
     border:1px solid black;
-    height: 95%;
+    height: 55vh;
     width:85% !important;
-    margin-top: 30px;
+    margin-top: 2vh;
 }
 
 .contenedorModulo:hover{

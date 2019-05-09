@@ -10,7 +10,36 @@
     margin-left: 32px; 
 }
 
+.filaFormulario{
+    height: 8vh;
+}
+
+.columnaFormulario label{
+    font-size: .9vw;
+}
+
+.columnaFormulario input{
+    width: 26vw;   
+    height: 3.5vh;
+}
+
+.columnaFormulario select{
+    width: 26vw;   
+    height: 3.5vh;
+}
 
 
+.formRadio input{
+    width: 1vw;   
+    margin-top: -.4vh;
 
+}
 
+.filaFormulario:nth-child(6) input{
+    width: 19vw; 
+    height: 3.5vh;
+}
+
+.filaFormulario{
+    margin-top: .8vh;
+}

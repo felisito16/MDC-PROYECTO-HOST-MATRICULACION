@@ -4,9 +4,14 @@
 }
 
 #btnSiguiente{
-    margin-right: 10px;
+    margin-right: 1vw;
     background-color: rgb(131, 153, 166);
     border-color:  rgb(7, 148, 14);
+    padding: .3vw 1.2vw .3vw 1.2vw;
+    position: absolute; 
+    right: 0;
+    font-size: .9vw;
+    
 }
 
 #btnSiguiente:hover{
@@ -14,9 +19,14 @@
 }
 
 #btnAtras{
-    margin-right: 10px;
     background-color: rgb(131, 153, 166);
     border-color:  rgb(209, 40, 10);
+    margin-right: 8vw;
+    padding: .3vw 1.2vw .3vw 1.2vw;
+    position: absolute; 
+    right: 0;
+    font-size: .9vw;
+    
 }
 
 #btnAtras:hover{
@@ -37,7 +47,7 @@
 }
 
 .columnaLogo img{
-    width: 37%;
+    width: 35%;
     margin-left: -16px; 
 }
 
@@ -55,7 +65,7 @@
     border: 2px solid black;
     width: 40vw;
     text-align: center;
-    margin-top: 4px;
+    margin-top: .2vh;
     font-size: 1.6vw;
 }
 
@@ -67,6 +77,7 @@
 
 .contenedorContenidoPrincipal{
     border: 2px solid rgb(131, 153, 166);
+    position: relative;
 }
 
 .contenedorPrincipal{
@@ -75,11 +86,14 @@
 }
 
 .filaBarraNavegacion{
-    height: 8%;
+    height: 8vh;
 }
 
 .filaBotones{
-    float: right;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height:5vh;
 }
 
 .filaContenido{
