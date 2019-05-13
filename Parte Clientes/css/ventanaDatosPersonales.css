@@ -43,3 +43,7 @@
 .filaFormulario{
     margin-top: .8vh;
 }
+
+.form-control {
+    padding: 0px
+}
