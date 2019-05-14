@@ -11,11 +11,6 @@
     position: absolute; 
     right: 0;
     font-size: .9vw;
-    
-}
-
-#btnSiguiente:hover{
-    background-color:  rgb(7, 148, 14);
 }
 
 .columnaBarraNavegacion{

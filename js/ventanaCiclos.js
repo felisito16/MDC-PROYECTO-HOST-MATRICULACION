@@ -12,3 +12,28 @@
 }, function () {
     $(this).removeClass("contenedorActivohover").css("color","black");
 });
+
+
+$(document).ready(function () {
+
+    // Funcionalidad con la API
+    $(".contenedorModulo:eq(0)").click(() => { matriculaCiclos("DAM"); console.log("DAM")})
+    $(".contenedorModulo:eq(1)").click(() => { matriculaCiclos("DAW"); console.log("DAW")})
+    $(".contenedorModulo:eq(2)").click(() => { matriculaCiclos("ASIR"); console.log("ASIR")})
+});
+
+//Funcion Matricula Ciclos
+function matriculaCiclos(familiaProfesional) {
+   
+    var uri = "https://proyecto-mdc-api.herokuapp.com/crearMatricula";
+    console.log("URI: " + uri)
+
+    $.post(uri, { familiaProfesional: familiaProfesional})
+   
+    $("#btnSiguiente").removeAttr("disabled");
+
+    $("#btnSiguiente").hover(function(){
+        $(this).css("background-color", "rgb(7, 148, 14)")
+    })
+
+}
