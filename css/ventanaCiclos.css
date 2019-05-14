@@ -1,3 +1,107 @@
+*
+{
+    margin:0 0;
+}
+
+#btnSiguiente{
+    margin-right: 1vw;
+    background-color: rgb(131, 153, 166);
+    border-color:  rgb(7, 148, 14);
+    padding: .3vw 1.2vw .3vw 1.2vw;
+    position: absolute; 
+    right: 0;
+    font-size: .9vw;
+    
+}
+
+#btnSiguiente:hover{
+    background-color:  rgb(7, 148, 14);
+}
+
+.columnaBarraNavegacion{
+    width: 100%;
+    margin-top: 1.2vh;
+}
+
+.columnaDerecha{
+    height: 100%;
+}
+
+.columnaIzquierda{
+    height: 100%;
+}
+
+.columnaLogo img{
+    width: 35%;
+    margin-left: -16px; 
+}
+
+.columnaPrincipal{
+    height: 100%;
+}
+
+.columnaTituloContenido{
+    height: 50px;
+    margin-top: 12px;
+    margin: auto;
+}
+
+.columnaTituloContenido h2{
+    border: 2px solid black;
+    width: 40vw;
+    text-align: center;
+    margin-top: .2vh;
+    font-size: 1.6vw;
+}
+
+.columnaTitulo h2{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.6vw;
+}
+
+.contenedorContenidoPrincipal{
+    border: 2px solid rgb(131, 153, 166);
+    position: relative;
+}
+
+.contenedorPrincipal{
+    height: 100vh;
+	overflow: auto;
+}
+
+.filaBarraNavegacion{
+    height: 9%;
+}
+
+.filaBotones{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height:5vh;
+}
+
+.filaContenido{
+    height: 95%;
+}
+
+.filaContenidoPrincipal{
+    height: 74%;
+}
+
+.filaLogoTitulo{
+    height: 5%;
+}
+
+.filaPrincipal
+{
+    height: 100%;
+}
+
+.filaTituloContenido{
+    height: 10%;
+}
+
 .columnaEnlace{
     height: 100%;
 }
