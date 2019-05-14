@@ -32,8 +32,10 @@ function matriculaCiclos(familiaProfesional) {
    
     $("#btnSiguiente").removeAttr("disabled");
 
-    $("#btnSiguiente").hover(function(){
+    $("#btnSiguiente").mouseover(function(){
         $(this).css("background-color", "rgb(7, 148, 14)")
-    })
+    }).mouseout(function() {
+        $(this).css("background-color", "rgb(131, 153, 166)")
+    });;
 
 }
