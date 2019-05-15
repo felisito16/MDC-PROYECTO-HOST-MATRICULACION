@@ -23,15 +23,20 @@ $(document).ready(function () {
 
     // Boton Siguiente Click
     $("#btnSiguiente").click(() => {
-        if ($(".contenedorModulo:eq(0)") == $(this)) {
-            localStorage.setItem("ciclo", "DAM");
-        } else if ($(".contenedorModulo:eq(1)") == $(this)) {
-            localStorage.setItem("ciclo", "DAW");
-        } else if ($(".contenedorModulo:eq(2)") == $(this)) {
-            localStorage.setItem("ciclo", "ASIR");
+        var algunCicloSeleccionado = false
+
+        $(".contenedorModulo").each((e) => {
+            console.log(e)
+            $(".contenedorModulo:eq("+e+")").hasClass("contenedorActivo") ? algunCicloSeleccionado = true : ""
+        })
+
+        if (algunCicloSeleccionado == true) {
+            var cicloSelect = $(".contenedorActivo h1").text()
+            localStorage.setItem("ciclo", cicloSelect);
         } else {
-            alert("Picha escogeme un ciclo, arme el favo")
+            alert("A ti que te pasa")
         }
+
     })
 });
 
