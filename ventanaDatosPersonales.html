@@ -107,7 +107,7 @@
                                     <!-- Columna Segundo Apellido -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
 
-                                        <label for="segundoApellido">Segundo Apellido:</label>
+                                        <label for="segundoApellido">Segundo Apellido*:</label>
                                         <input type="text" class="form-control" id="segundoApellido" placeholder="Segundo Apellido">
 
                                     </div>
@@ -117,21 +117,8 @@
                                 <!-- Fila Formulario 2 -->
                                 <div class="row filaFormulario">
 
-                                    <!-- Columna Sexo -->
-                                    <div class="col-xs-1 col-sm-6 col-md-2 padding-0 form-check columnaFormulario">
-                                        
-                                        <label for="">Sexo:*</label><br>
-                                        <div class="formRadio">
-                                            <input class="form-check-input" type="radio" name="sexo" id="hombre" value="hombre" checked> 
-                                            <label class="form-check-label" id="labelHombre" for="hombre">Hombre
-                                            <input class="form-check-input" type="radio" name="sexo" id="inputMujer" value="mujer">
-                                            <label class="form-check-label" id="labelMujer" for="mujer">Mujer
-                                        </div>
-                                
-                                    </div>
-
                                     <!-- Columna Fecha Nacimiento -->
-                                    <div class="col-xs-1 col-sm-6 col-md-3 padding-0 form-group columnaFormulario">
+                                    <div class="col-xs-1 col-sm-6 col-md-4 padding-0 form-group columnaFormulario">
 
                                         <label for="fechaNacimiento">Fecha Nacimiento:*</label>
                                         <input id="fechaNacimiento"/>
@@ -139,7 +126,7 @@
                                     </div>
                                 
                                     <!-- Columna Tipo Documentacion -->
-                                    <div class="col-xs-1 col-sm-6 col-md-3 padding-0 form-group columnaFormulario">
+                                    <div class="col-xs-1 col-sm-6 col-md-4 padding-0 form-group columnaFormulario">
                                         
                                         <label for="tipoDocumentacion">Tipo de Documentacion:*</label>
                                         <select class="form-control" id="tipoDocumentacion">
@@ -166,30 +153,24 @@
                                     <!-- Columna Nacionalidad -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
                                         
-                                        <label for="nacionalidad">Nacionalidad:*</label>
-                                        <select class="form-control" id="nacionalidad">
-                                            <option hidden checked>Nacionalidad</option>
-                                            <option>Española</option>
-                                        </select>
+                                        <label for="nacionalidad">Nacionalidad*:</label>
+                                        <input type="text" class="form-control" id="nacionalidad" placeholder="Nacionalidad">
                                     
                                     </div>
 
-                                    <!-- Columna Pais de Nacimiento -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-
-                                        <label for="paisNacimiento">Pais de Nacimiento:*</label>
-                                        <select class="form-control" id="paisNacimiento">
-                                            <option hidden checked>Pais Nacimiento</option>
-                                            <option>España</option>
-                                        </select>
-
-                                    </div>
-                                
-                                    <!-- Columna Localidad Extranjera -->
+                                    <!-- Columna Provincia -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
                                         
-                                        <label for="localidadExtranjera">Localidad Extranjera:</label>
-                                        <input type="text" class="form-control" id="localidadExtranjera" placeholder="Localidad Extranjera">
+                                        <label for="provincia">Provincia*:</label>
+                                        <input type="text" class="form-control" id="provincia" placeholder="Provincia">
+                                    
+                                    </div>
+                                
+                                    <!-- Columna Localidad -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
+                                        
+                                        <label for="localidad">Localidad*:</label>
+                                        <input type="text" class="form-control" id="localidad" placeholder="Localidad">
                                         
                                     </div>
 
@@ -198,64 +179,6 @@
                                 <!-- Fila Formulario 4 -->
                                 <div class="row filaFormulario">
 
-                                    <!-- Columna Provincia de Resistencia -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-                                        
-                                        <label for="provinciaResidencia">Provincia de Residencia:*</label>
-                                        <select class="form-control" id="provinciaResidencia">
-                                            <option hidden checked>Provincia de Residencia</option>
-                                            <option>Sevilla</option>
-                                        </select>
-                                    
-                                    </div>
-
-                                    <!-- Columna Municipio de Residencia -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-
-                                        <label for="municipioResidencia">Municipio de Residencia:*</label>
-                                        <select class="form-control" id="municipioResidencia">
-                                            <option hidden checked>Municipio de Residencia</option>
-                                            <option>Tomares</option>
-                                        </select>
-
-                                    </div>
-                                
-                                    <!-- Columna Localidad de Nacimiento -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-                                        
-                                        <label for="localidadNacimiento">Localidad de Nacimiento:*</label>
-                                        <select class="form-control" id="localidadNacimiento">
-                                            <option hidden checked>Localidad de Nacimiento</option>
-                                            <option>Sevilla</option>
-                                        </select>
-                                        
-                                    </div>
-
-                                </div>
-
-                                <!-- Fila Formulario 5 -->
-                                <div class="row filaFormulario">
-
-                                    <!-- Columna Tipo de Via -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-                                        
-                                        <label for="tipoVia">Tipo de Via:*</label>
-                                        <select class="form-control" id="tipoVia">
-                                            <option hidden checked>Tipo de Via</option>
-                                            <option>Calle</option>
-                                            <option>Avenida</option>
-                                        </select>
-                                    
-                                    </div>
-
-                                    <!-- Columna Nombre de la Via -->
-                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
-
-                                        <label for="nombreVia">Nombre de la via:*</label>
-                                        <input type="text" class="form-control" id="nombreVia" placeholder="Nombre de la via">
-
-                                    </div>
-                                
                                     <!-- Columna Codigo Postal -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
                                         
@@ -264,46 +187,25 @@
                                         
                                     </div>
 
-                                </div>
+                                    <!-- Columna Nombre de la Via -->
+                                    <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
 
-                                <!-- Fila Formulario 6 -->
-                                <div class="row filaFormulario">
+                                        <label for="calle">Calle:*</label>
+                                        <input type="text" class="form-control" id="calle" placeholder="Calle">
 
-                                    <!-- Columna Numero -->
-                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario">
+                                    </div>
+
+                                     <!-- Columna Numero -->
+                                     <div class="col-xs-1 col-sm-2 col-md-4 padding-0 form-group columnaFormulario">
                                         
                                         <label for="numero">Número:*</label>
                                         <input type="text" class="form-control" id="numero" placeholder="Nº">
                                     
                                     </div>
-
-                                    <!-- Columna Piso -->
-                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario">
-
-                                        <label for="piso">Piso:</label>
-                                        <input type="text" class="form-control" id="piso" placeholder="Piso">
-
-                                    </div>
                                 
-                                    <!-- Columna Letra -->
-                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario">
-                                        
-                                        <label for="letra">Letra:</label>
-                                        <input type="text" class="form-control" id="letra" placeholder="Letra">
-                                        
-                                    </div>
-
-                                    <!-- Columna Escalera -->
-                                    <div class="col-xs-1 col-sm-2 col-md-3 padding-0 form-group columnaFormulario">
-                                        
-                                        <label for="escalera">Escalera:</label>
-                                        <input type="text" class="form-control" id="escalera" placeholder="Escalera">
-                                        
-                                    </div>
-
                                 </div>
 
-                                <!-- Fila Formulario 7 -->
+                                <!-- Fila Formulario 5 -->
                                 <div class="row filaFormulario">
 
                                     <!-- Columna Telefono -->

@@ -119,30 +119,7 @@
     height: 10%;
 }
 
-.formRadio{
-    margin-left: 20px; 
-}
-
-.formRadio #inputMujer{
-    margin-left: 12px; 
-}
-
-.formRadio #labelMujer{
-    margin-left: 32px; 
-}
-
 .filaFormulario{
-    height: 13%;
+    height: 18%;
 }
 
-@media (max-width: 1400px) {
-
-    .formRadio #inputMujer{
-        margin-left: 5px; 
-    }
-
-    .formRadio #labelMujer{
-        margin-left: 25px; 
-    }
-
-  }
