@@ -17,9 +17,9 @@ $(".contenedorModulo").css("color", "black").hover(function () {
 $(document).ready(function () {
 
     // Funcionalidad con la API
-    $(".contenedorModulo:eq(0)").click(() => { console.log("DAM") })
-    $(".contenedorModulo:eq(1)").click(() => { console.log("DAW") })
-    $(".contenedorModulo:eq(2)").click(() => { console.log("ASIR") })
+    $(".contenedorModulo:eq(0)").click(() => { matriculaCiclos(); console.log("DAM") })
+    $(".contenedorModulo:eq(1)").click(() => { matriculaCiclos(); console.log("DAW") })
+    $(".contenedorModulo:eq(2)").click(() => { matriculaCiclos(); console.log("ASIR") })
 
     // Boton Siguiente Click
     $("#btnSiguiente").click(() => {
@@ -36,12 +36,12 @@ $(document).ready(function () {
 });
 
 //Funcion Matricula Ciclos
-function matriculaCiclos(familiaProfesional) {
+function matriculaCiclos() {
 
-    var uri = "https://proyecto-mdc-api.herokuapp.com/crearMatricula";
+    /* var uri = "https://proyecto-mdc-api.herokuapp.com/crearMatricula";
     console.log("URI: " + uri)
 
-    $.post(uri, { familiaProfesional: familiaProfesional })
+    $.post(uri, { familiaProfesional: familiaProfesional }) */
 
     $("#btnSiguiente").removeAttr("disabled");
 
