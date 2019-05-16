@@ -1,19 +1,17 @@
-.columnaFormulario {
-    line-height: 50px;
-}
-
 .columnaFormulario label{
     float: right;
+    margin-top: 2.56vh;
+    font-weight: bold;
 }
 
 .columnaFormulario input{
-    margin-top: 9px;
+    margin-top: 2vh;
 }
 
 .columnaFormulario select{
-    margin-top: 9px;
+    margin-top: 2vh;
 }
 
-.filaFormulario:first-of-type{
-    margin-top: 50px;
+.contenedorContenidoFormulario{
+    margin-top: 4vh;
 }

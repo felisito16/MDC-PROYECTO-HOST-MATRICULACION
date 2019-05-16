@@ -4,23 +4,25 @@
 }
 
 #btnSiguiente{
-    margin-right: 1vw;
+    margin-right: .8vw;
     background-color: rgb(131, 153, 166);
     border-color:  rgb(7, 148, 14);
     padding: .3vw 1.2vw .3vw 1.2vw;
     position: absolute;
     right: 0;
-    font-size: .9vw;
+    font-size: 1.2vw;
+    margin-top: -1.5vh;
 }
 
 #btnAtras{
     background-color: rgb(131, 153, 166);
     border-color:  rgb(209, 40, 10);
-    margin-right: 8vw;
-    padding: .3vw 1.2vw .3vw 1.2vw;
+    margin-right: 9vw;
+    margin-top: -1.5vh;
+    padding: .3vw 2vw .3vw 2vw;
     position: absolute;
     right: 0;
-    font-size: .9vw;
+    font-size: 1.2vw;
 }
 
 #btnAtras:hover{
@@ -48,6 +50,7 @@
 .columnaLogo img{
     width: 35%;
     margin-left: -16px;
+    margin-top: .2vh;
 }
 
 .columnaPrincipal{
@@ -70,7 +73,7 @@
 
 .columnaTitulo h2{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 1.5vh;
     font-size: 1.6vw;
 }
 
@@ -114,6 +117,7 @@
 
 .filaTituloContenido{
     height: 10%;
+    margin-top: 1vh;
 }
 
 @font-face {
@@ -127,22 +131,24 @@ nav a:not(.activo):hover {
 }
 
 nav a{
+    border: 1px solid green;
     text-decoration: none;
     color: white;
     padding: .8vw;
+    border-right: 1px solid white;
     font-family: Poppins;
-    border-right: 1px solid white;
-    font-size: .8vw;
+    font-size: .9vw;
+    margin-top: 1px;
 }
-
-/* nav span{
-    padding: .8vw;
-    border-right: 1px solid white;
-}  */
 
 nav a:hover {
     text-decoration: none;
     background: rgb(7, 148, 14);
     color: white;
+}
+
+a[class*="bloqueado"]{
+    pointer-events: none;
+    background: rgb(175, 189, 197);
 }
 

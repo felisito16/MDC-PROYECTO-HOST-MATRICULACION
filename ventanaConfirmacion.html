@@ -21,21 +21,21 @@
         <div class="row filaPrincipal">
 
             <!-- Columna Izquierda -->
-            <div class="col-xs-1 col-sm-2 col-md-1 padding-0 columnaIzquierda"></div>
+            <div class="col-xs-1 col-sm-2 col-md-1 columnaIzquierda"></div>
 
             <!-- Columna Principal -->
-            <div class="col-xs-1 col-sm-2 col-md-10 padding-0 columnaPrincipal">
+            <div class="col-xs-1 col-sm-2 col-md-10 columnaPrincipal">
                 
                 <!-- Fila Logo y Titulo -->
                 <div class="row filaLogoTitulo">
 
                     <!-- Columna Logo -->
-                    <div class="col-xs-1 col-sm-2 col-md-6 padding-0 columnaLogo">
+                    <div class="col-xs-1 col-sm-2 col-md-6 columnaLogo">
                         <img src="img/logo.png" alt="logo">
                     </div>
 
                     <!-- Columna Titulo -->
-                    <div class="col-xs-1 col-sm-2 col-md-6 padding-0 columnaTitulo">
+                    <div class="col-xs-1 col-sm-2 col-md-6 columnaTitulo">
                         <h2>TITULO MATRICULACION</h2>
                     </div>
 
@@ -47,12 +47,12 @@
                     <!-- Columna Barra Navegacion -->
                     <div class="columnaBarraNavegacion">
                         <nav class="nav nav-pills nav-justified">
-                            <a class="nav-item barraNavegacion" href="ventanaCiclos.html">CICLOS</a>
-                            <a class="nav-item barraNavegacion" href="ventanaDatosPersonales.html">DATOS PERSONALES</a>
-                            <a class="nav-item barraNavegacion" href="ventanaDatosAcademicos.html">DATOS ACADEMICOS</a>
-                            <a class="nav-item barraNavegacion" href="ventanaDocumentacion.html">DOCUMENTACION</a>
-                            <a class="nav-item barraNavegacion" href="ventanaFormaPago.html">FORMA DE PAGO</a>
-                            <a class="nav-item barraNavegacion" href="ventanaConfirmacion.html">CONFIRMACION</a>
+                            <a class="nav-item" href="ventanaCiclos.html">CICLO FORMATIVO</a>
+                            <a class="nav-item" href="ventanaDatosPersonales.html">DATOS PERSONALES</a>
+                            <a class="nav-item" href="ventanaDatosAcademicos.html">DATOS ACADEMICOS</a>
+                            <a class="nav-item" href="ventanaDocumentacion.html">DOCUMENTACION</a>
+                            <a class="nav-item" href="ventanaFormaPago.html">FORMA DE PAGO</a>
+                            <a class="nav-item" href="ventanaConfirmacion.html">CONFIRMACION</a>
                         </nav>
                     </div>
                     
@@ -79,10 +79,214 @@
                         <!-- Fila Contenido -->
                         <div class="row filaContenido" >
 
-                            <!-- Contenedor Contenido Formulario -->
-                            <div class="container-fluid contenedorContenidioFormulario">
-
+                            <!-- Contenedor Contenido Confirmacion -->
+                            <div class="container-fluid contenedorContenidoConfirmacion">
                                 
+                                <!-- Fila Resumen -->
+                                <div class="row filaContenidoResumen">
+
+                                    <!-- Contenedor Contenido Resumen -->
+                                    <div class="contenedorContenidoResumen">
+                                        
+                                        <!-- Fila Resumen 1 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Curso -->
+                                            <div class="col-xs-1 col-sm-2 col-md-2 columnaResumen">
+                                                    
+                                                <label>Curso:</label>
+                                                <label id="curso"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Nombre -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+        
+                                                    <label>Nombre:</label>
+                                                    <label id="nombre">Luis</label>
+        
+                                            </div>
+                                        
+                                            <!-- Columna Primer Apellido -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+        
+                                                    <label>Primer Apellido:</label>
+                                                    <label id="primerApellido">Barriga</label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 2 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Segundo Apellido -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+                                                    
+                                                <label>Segundo Apellido:</label>
+                                                <label id="segundoApellido">Carrasco</label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Fecha Nacimiento -->
+                                            <div class="col-xs-1 col-sm-2 col-md-4 columnaResumen">
+        
+                                                    <label>Fecha de Nacimiento:</label>
+                                                    <label id="fechaNacimiento"></label>
+        
+                                            </div>
+                                        
+                                            <!-- Columna NIF/NIE -->
+                                            <div class="col-xs-1 col-sm-2 col-md-3 columnaResumen">
+        
+                                                    <label>NIF/NIE:</label>
+                                                    <label id="nifNie"></label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 3 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Nacionalidad -->
+                                            <div class="col-xs-1 col-sm-2 col-md-4 columnaResumen">
+                                                    
+                                                <label>Nacionalidad:</label>
+                                                <label id="nacionalidad"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Provincia -->
+                                            <div class="col-xs-1 col-sm-2 col-md-4 columnaResumen">
+        
+                                                    <label>Provincia:</label>
+                                                    <label id="provincia"></label>
+        
+                                            </div>
+                                        
+                                            <!-- Columna Localidad -->
+                                            <div class="col-xs-1 col-sm-2 col-md-4 columnaResumen">
+        
+                                                    <label>Localidad:</label>
+                                                    <label id="localidad"></label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 4 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Codigo Postal -->
+                                            <div class="col-xs-1 col-sm-2 col-md-3 columnaResumen">
+                                                    
+                                                <label>Código Postal:</label>
+                                                <label id="codigoPostal"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Calle -->
+                                            <div class="col-xs-1 col-sm-2 col-md-6 columnaResumen">
+        
+                                                    <label>Calle:</label>
+                                                    <label id="calle"></label>
+        
+                                            </div>
+                                        
+                                            <!-- Columna Número -->
+                                            <div class="col-xs-1 col-sm-2 col-md-3 columnaResumen">
+        
+                                                    <label>Número:</label>
+                                                    <label id="numero"></label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 5 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Telefono -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+                                                    
+                                                <label>Teléfono:</label>
+                                                <label id="telefono"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Correo Electronico -->
+                                            <div class="col-xs-1 col-sm-2 col-md-7 columnaResumen">
+        
+                                                    <label>Correo Electrónico:</label>
+                                                    <label id="correoElectronico"></label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 5 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Centro -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+                                                    
+                                                <label>Centro de Matriculación:</label>
+                                                <label id="centro"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Localidad Centro -->
+                                            <div class="col-xs-1 col-sm-2 col-md-4 columnaResumen">
+        
+                                                    <label>Localidad del Centro:</label>
+                                                    <label id="localidadCentro"></label>
+        
+                                            </div>
+
+                                            <!-- Columna Correo Electronico -->
+                                            <div class="col-xs-1 col-sm-2 col-md-3 columnaResumen">
+        
+                                                    <label>Código del Centro:</label>
+                                                    <label id="codigoCentro"></label>
+        
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Fila Resumen 6 -->
+                                        <div class="row filaResumen">
+
+                                            <!-- Columna Curso de Matriculacion -->
+                                            <div class="col-xs-1 col-sm-2 col-md-5 columnaResumen">
+                                                    
+                                                <label>Curso de Matriculación:</label>
+                                                <label id="cursoMatriculacion"></label>
+                                            
+                                            </div>
+        
+                                            <!-- Columna Via Acceso -->
+                                            <div class="col-xs-1 col-sm-2 col-md-7 columnaResumen">
+        
+                                                    <label>Vía de Acceso:</label>
+                                                    <label id="viaAcceso"></label>
+        
+                                            </div>
+
+                                        </div>
+                                        
+        
+                                    </div>
+                                        
+                                </div>
+
+                                <!-- Fila Botones -->
+                                <div class="row filaBotonConfirmar">
+                                
+                                    <button type="button" class="btn btn-success btnConfirmar">CONFIRMAR  MATRICULA</button></a>
+        
+                                </div>
+  
                             </div>
                             
                         </div>
@@ -94,13 +298,12 @@
             </div>
 
             <!-- Columna Derecha -->
-            <div class="col-xs-1 col-sm-2 col-md-1 padding-0 columnaDerecha"></div>
+            <div class="col-xs-1 col-sm-2 col-md-1 columnaDerecha"></div>
 
         </div>
 
     </div>
 
-    <script src="js/barraNavegacion.js"></script>
     <script src="js/ventanaConfirmacion.js"></script>
     <script src="js/global.js"></script>
 

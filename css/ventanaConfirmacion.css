@@ -1,0 +1,51 @@
+.filaContenidoResumen{
+    height: 100%;
+}
+
+.contenedorContenidoResumen{
+    width: 90%;
+    margin: auto;
+    height: 48vh;
+    overflow:hidden;
+    border: 2px solid rgb(131, 153, 166);
+    overflow-y: scroll;
+    margin-top: 3vh;
+}
+
+.filaResumen{
+    margin-top: 2vh;
+    padding: 10px;
+}
+
+.columnaResumen label:first-child{
+    font-weight: bold;
+}
+
+.columnaResumen label:nth-child(2){
+    margin-left: 1vw;
+}
+
+.columnaResumen label{
+    font-size: 1vw;
+}
+
+.filaBotonConfirmar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2vh;
+    height: 10vh;
+}
+
+.filaBotonConfirmar button{
+    padding: .5vw 3.5vw .5vw 3.5vw;
+    font-size: 1.25vw;
+    background-color: rgb(131, 153, 166);
+    border-color:  rgb(7, 148, 14);
+    margin-top: -6.5vh;
+}
+
+.filaBotonConfirmar button:hover{
+    background-color: rgb(7, 148, 14);
+}
+
