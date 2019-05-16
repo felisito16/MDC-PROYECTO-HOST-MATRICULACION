@@ -8,14 +8,9 @@
     background-color: rgb(131, 153, 166);
     border-color:  rgb(7, 148, 14);
     padding: .3vw 1.2vw .3vw 1.2vw;
-    position: absolute; 
+    position: absolute;
     right: 0;
     font-size: .9vw;
-    
-}
-
-#btnSiguiente:hover{
-    background-color:  rgb(7, 148, 14);
 }
 
 #btnAtras{
@@ -23,10 +18,9 @@
     border-color:  rgb(209, 40, 10);
     margin-right: 8vw;
     padding: .3vw 1.2vw .3vw 1.2vw;
-    position: absolute; 
+    position: absolute;
     right: 0;
     font-size: .9vw;
-    
 }
 
 #btnAtras:hover{
@@ -36,6 +30,11 @@
 .columnaBarraNavegacion{
     width: 100%;
     margin-top: 1.2vh;
+}
+
+.columnaBarraNavegacion nav{
+    background-color: rgb(131, 153, 166);
+    border-radius: none;
 }
 
 .columnaDerecha{
@@ -48,7 +47,7 @@
 
 .columnaLogo img{
     width: 35%;
-    margin-left: -16px; 
+    margin-left: -16px;
 }
 
 .columnaPrincipal{
@@ -86,7 +85,7 @@
 }
 
 .filaBarraNavegacion{
-    height: 8vh;
+    height: 9%;
 }
 
 .filaBotones{
@@ -101,11 +100,11 @@
 }
 
 .filaContenidoPrincipal{
-    height: 74%;
+    height: 75%;
 }
 
 .filaLogoTitulo{
-    height: 5%;
+    height: 6%;
 }
 
 .filaPrincipal
@@ -115,6 +114,35 @@
 
 .filaTituloContenido{
     height: 10%;
-    
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../poppinsBarraNavegacion/Poppins-Regular.otf") format("opentype");
+}
+
+nav a:not(.activo):hover {
+    text-decoration: none;
+    outline : none;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding: .8vw;
+    font-family: Poppins;
+    border-right: 1px solid white;
+    font-size: .8vw;
+}
+
+/* nav span{
+    padding: .8vw;
+    border-right: 1px solid white;
+}  */
+
+nav a:hover {
+    text-decoration: none;
+    background: rgb(7, 148, 14);
+    color: white;
 }
 
