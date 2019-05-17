@@ -17,9 +17,9 @@ $(".contenedorModulo").css("color", "black").hover(function () {
 $(document).ready(function () {
 
     // Funcionalidad con la API
-    $(".contenedorModulo:eq(0)").click(() => { cambiarEstadoBoton(); console.log("DAM") })
-    $(".contenedorModulo:eq(1)").click(() => { cambiarEstadoBoton(); console.log("DAW") })
-    $(".contenedorModulo:eq(2)").click(() => { cambiarEstadoBoton(); console.log("ASIR") })
+    $(".contenedorModulo:eq(0)").click(() => { botonActivado(); console.log("DAM") })
+    $(".contenedorModulo:eq(1)").click(() => { botonActivado(); console.log("DAW") })
+    $(".contenedorModulo:eq(2)").click(() => { botonActivado(); console.log("ASIR") })
 
     // Boton Siguiente Click
     $("#btnSiguiente").click(() => {

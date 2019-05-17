@@ -1,7 +1,7 @@
 /* CAMBIAR ESTADO BOTON */ 
 
 //Funcion cambiar estado del boton siguiente
-function cambiarEstadoBoton() {
+function botonActivado() {
 
     $("#btnSiguiente").removeAttr("disabled").removeAttr("style");
 
@@ -11,3 +11,17 @@ function cambiarEstadoBoton() {
         $(this).css("background-color", "rgb(131, 153, 166)")
     });;
 }
+
+function botonDesactivado() {
+    $("#btnSiguiente").attr("disabled",true).attr("style","cursor: not-allowed;");
+}
+
+$("a[href='ventanaCiclos.html'] button[id='btnAtras']").click(() => {
+
+  
+        $(".contenedorModulo > .filaTituloModulo > h1").text(localStorage.getItem("ciclo")).addClass("contenedorActivo")
+        
+
+    
+    
+})
