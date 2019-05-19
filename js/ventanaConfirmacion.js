@@ -9,7 +9,6 @@ var arrayParametros = ["ciclo","nombre", "primerApellido", "segundoApellido",
 for(var i = 0;i<20;i++)
 {
     localStorage.getItem(arrayParametros[i])
-    console.log(localStorage.getItem(arrayParametros[i]))
     $("#" + arrayParametros[i]).text(localStorage.getItem(arrayParametros[i]))
     
 }
@@ -20,7 +19,10 @@ $(".btnConfirmar").click(function(){
 
     var uri = "https://proyecto-mdc-api.herokuapp.com/saveMatricula"
     console.log("URI: " + uri)
-    console.log(localStorage.getItem(arrayParametros[0]))
+    for(var i = 0;i<20;i++){
+        console.log(localStorage.getItem(arrayParametros[i]))
+    }
+
     $.post(uri, {
         ciclo:localStorage.getItem(arrayParametros[0]),
         nombre:localStorage.getItem(arrayParametros[1]),

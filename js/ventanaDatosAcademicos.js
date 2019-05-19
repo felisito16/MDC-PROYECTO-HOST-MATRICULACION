@@ -4,13 +4,11 @@ $(document).ready(() => {
     var selectCurso = $("#curso").val()
     var selectViaAcceso = $("#viaAcceso").val()
     $('.form-control').each(function() {
-        console.log($(this).val())
     if($(this).val()!= "" && selectCurso != "Curso Matriculación" && selectCurso != null && selectViaAcceso != "Vía Acceso" && selectViaAcceso != null){
         contadorRellenos++;
         (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
         }
     });
-    console.log(contadorRellenos);
 })
 
 
