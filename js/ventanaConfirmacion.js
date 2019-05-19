@@ -8,7 +8,7 @@ var arrayParametros = ["ciclo","nombre", "primerApellido", "segundoApellido",
 
 for(var i = 0;i<20;i++)
 {
-    localStorage.getItem(arrayParametros[i])
+    // localStorage.getItem(arrayParametros[i])
     $("#" + arrayParametros[i]).text(localStorage.getItem(arrayParametros[i]))
     
 }
