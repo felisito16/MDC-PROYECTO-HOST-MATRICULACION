@@ -1,54 +1,65 @@
 // Datepicker de Fecha de Nacimiento
-$('#fechaNacimiento').datepicker({ 
+$('#fechaNacimiento').datepicker({
     locale: 'es-es',
     uiLibrary: 'bootstrap4',
     format: 'dd/mm/yyyy'
 });
 
 
-$(".form-control").change(() =>{
-
+//Habilitar boton "Siguiente" si estan todos los campos rellenos al cargar la página.
+$(document).ready(() => {
     var contadorRellenos = 0;
-
-    for(var i = 0;i<14;i++)
-    {
-        ($(".form-control:eq(" + i + ")").val() != "" && $(".form-control:eq(" + i + ")").val() != " "?contadorRellenos++:"")
-    }
-    
-    (contadorRellenos == 14)?botonActivado():botonDesactivado()
-    
-});
-
-function dimeIndiceVacio(){
-
-    var indice;
-
-    for(var i = 0;i<14;i++)
-    {
-        ($(".form-control:eq(" + i + ")").val() == ""?indice = i:"")
-    }
-
-    return indice;
-}
+    var selectTipoDocumentacion = $("#tipoDocumentacion").val()
+    $('.form-control').each(function() {
+        if($(this).val()!= ""  && selectTipoDocumentacion != "Tipo Documentacion"  && selectTipoDocumentacion != null){
+            contadorRellenos++;
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+        }
+    });
+})
 
 
-var arrayParametros = ["nombre", "primerApellido", "segundoApellido", 
-                        "fechaNacimiento", "tipoDocumentacion", "numDNI", "nacionalidad", 
-                        "provincia", "nombreLocalidad", "cpLocalidad", 
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla en un input
+$('.form-control').keyup(() =>
+{
+    var contadorRellenos = 0;
+    var selectTipoDocumentacion = $("#tipoDocumentacion").val()
+    $('.form-control').each(function() {
+        if($(this).val()!= "" && selectTipoDocumentacion != "Tipo Documentacion"  && selectTipoDocumentacion != null){
+            contadorRellenos++;
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+        }
+     });
+})
+
+
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al producirse un cambio en el select
+$('.form-control').change(() =>
+{
+    var contadorRellenos = 0;
+    var selectTipoDocumentacion = $("#tipoDocumentacion").val()
+    $('.form-control').each(function() {
+    if($(this).val()!= ""  && selectTipoDocumentacion != "Tipo Documentacion" && selectTipoDocumentacion != null){
+        contadorRellenos++;
+        (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+        }
+    });
+})
+
+
+// Insercion de datos en el LocalStorage
+var arrayParametros = ["nombre", "primerApellido", "segundoApellido",
+                        "fechaNacimiento", "tipoDocumentacion", "numDNI", "nacionalidad",
+                        "provincia", "nombreLocalidad", "cpLocalidad",
                         "calleDom", "numeroDom", "telefono", "email"];
 
+$("#btnSiguiente").click(() => {
 
-// function siTodoEstaEscrito(){
+    for(var i=0;i<14;i++)
+    {
+        localStorage.setItem(arrayParametros[i],$(".form-control:eq(" + i + ")").val())
+    }
+})
 
 
 
-// }
-
-
-// $("#btnSiguiente").click(() =>
-// {
-//     for(var i = 0;i<14;i++)
-//     {
-//         localStorage.setItem(arrayParametros[i], $(".columnaFormulario input:nth-child(2)").val()[i])
-//     }
-// })                 

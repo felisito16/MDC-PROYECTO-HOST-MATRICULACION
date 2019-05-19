@@ -17,7 +17,7 @@
 .contenedorActivo{
     background-color: rgb(7, 148, 14);
     -webkit-animation: jello-vertical 0.9s both;
-	animation: jello-vertical 0.9s both;
+	  animation: jello-vertical 0.9s both;
 }
 
 .contenedorModulo{

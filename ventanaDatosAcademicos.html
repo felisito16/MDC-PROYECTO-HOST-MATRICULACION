@@ -91,14 +91,14 @@
                                     <!-- Columna Label Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
                                             
-                                        <label for="centro">Centro de Matriculación: </label>
+                                        <label for="nombreCentroInscripcion">Centro de Matriculación: </label>
                                     
                                     </div>
 
                                     <!-- Columna Input Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
 
-                                        <input type="text" class="form-control" id="centro" placeholder="Centro">
+                                        <input type="text" class="form-control" id="nombreCentroInscripcion" placeholder="Centro">
 
                                     </div>
                                 
@@ -116,14 +116,14 @@
                                     <!-- Columna Label Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
                                             
-                                        <label for="localidad">Localidad del Centro: </label>
+                                        <label for="localidadCentroInscripcion">Localidad del Centro: </label>
                                     
                                     </div>
 
                                     <!-- Columna Input Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
 
-                                        <input type="text" class="form-control" id="localidad" placeholder="Localidad">
+                                        <input type="text" class="form-control" id="localidadCentroInscripcion" placeholder="Localidad">
 
                                     </div>
                                 
@@ -141,14 +141,14 @@
                                     <!-- Columna Label Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
                                             
-                                        <label for="codigo">Código del Centro: </label>
+                                        <label for="codigoCentro">Código del Centro: </label>
                                     
                                     </div>
 
                                     <!-- Columna Input Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
 
-                                        <input type="text" class="form-control" id="codigo" placeholder="Código">
+                                        <input type="text" class="form-control" id="codigoCentro" placeholder="Código">
 
                                     </div>
                                 
@@ -173,7 +173,11 @@
                                     <!-- Columna Input Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
 
-                                        <input type="text" class="form-control" id="curso" placeholder="Curso">
+                                        <select class="form-control" id="curso">
+                                            <option hidden checked>Curso Matriculación</option>
+                                            <option>1º</option>
+                                            <option>2º</option>
+                                        </select>
 
                                     </div>
                                 
@@ -198,8 +202,8 @@
                                     <!-- Columna Input Centro -->
                                     <div class="col-xs-1 col-sm-2 col-md-4 form-group columnaFormulario">
 
-                                        <select class="form-control" id="viadoAcceso">
-                                            <option hidden checked>Opciones</option>
+                                        <select class="form-control" id="viaAcceso">
+                                            <option hidden checked>Vía Acceso</option>
                                             <option>Requisitos Académicos</option>
                                             <option>Prueba de Acceso</option>
                                             <option>Sin Requisitos Académicos</option>
@@ -220,7 +224,7 @@
                         <div class="row filaBotones">
                             
                             <a href="ventanaDatosPersonales.html"><button type="button" class="btn btn-primary" id="btnAtras">Atras</button></a>
-                            <a href="#"><button type="button" class="btn btn-primary" id="btnSiguiente" disabled style="cursor: not-allowed;">Siguiente</button></a>
+                            <a href="ventanaDocumentacion.html"><button type="button" class="btn btn-primary" id="btnSiguiente" disabled style="cursor: not-allowed;">Siguiente</button></a>
 
                         </div>
 
@@ -236,9 +240,10 @@
         </div>
 
     </div>
-
-    <script src="js/ventanaDatosAcademicos.js"></script>
+    
     <script src="js/global.js"></script>
+    <script src="js/ventanaDatosAcademicos.js"></script>
+
 
 </body>
 </html>
