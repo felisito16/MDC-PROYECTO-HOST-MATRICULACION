@@ -43,7 +43,8 @@ $(".btnConfirmar").click(function(){
         curso:localStorage.getItem(arrayParametros[18]), 
         viaAcceso:localStorage.getItem(arrayParametros[19]),
         fechaInscripcion: "19/05/2019",
-        estadoMatricula: "pendiente"
+        estadoMatricula: "pendiente",
+        gradoSuperior:true
     
     })
 
