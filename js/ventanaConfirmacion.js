@@ -44,7 +44,8 @@ $(".btnConfirmar").click(function(){
         viaAcceso:localStorage.getItem(arrayParametros[19]),
         fechaInscripcion: "19/05/2019",
         estadoMatricula: "pendiente",
-        gradoSuperior:true
+        gradoSuperior: true,
+        familiaProfesional: "Informatica"
     
     })
 
