@@ -16,10 +16,11 @@ for(var i = 0;i<20;i++)
 
 
 // Crear Matricula
-$(".btnConfirmar").click(() => {
+$(".btnConfirmar").click(function(){
+
     var uri = "https://proyecto-mdc-api.herokuapp.com/saveMatricula"
     console.log("URI: " + uri)
-
+    console.log(localStorage.getItem(arrayParametros[0]))
     $.post(uri, {
         ciclo:localStorage.getItem(arrayParametros[0]),
         nombre:localStorage.getItem(arrayParametros[1]),
@@ -45,5 +46,7 @@ $(".btnConfirmar").click(() => {
         estadoMatricula: "pendiente"
     
     })
+
+
 }) 
 
