@@ -19,6 +19,8 @@ $(".btnConfirmar").click(function(){
 
     var uri = "https://proyecto-mdc-api.herokuapp.com/saveMatricula"
     console.log("URI: " + uri)
+
+    
     for(var i = 0;i<20;i++){
         console.log(localStorage.getItem(arrayParametros[i]))
     }
@@ -51,6 +53,9 @@ $(".btnConfirmar").click(function(){
     
     })
 
+    for(var i = 0;i<20;i++){
+        console.log(localStorage.removeItem(arrayParametros[i]))
+    }
 
 }) 
 
