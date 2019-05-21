@@ -21,33 +21,14 @@ $(".contenedorModulo:eq(1)").click(() => {botonHabilitar()})
 $(".contenedorModulo:eq(2)").click(() => {botonHabilitar()})
 
 
-// Añadir clase 'contenedorActivo' al seleccionar un ciclo
-$("#btnSiguiente").click(() => {
-    var algunCicloSeleccionado = false
-
-    $(".contenedorModulo").each((e) => {
-        $(".contenedorModulo:eq("+e+")").hasClass("contenedorActivo") ? algunCicloSeleccionado = true : ""
-    })
-
-    if (algunCicloSeleccionado == true) {
-        var cicloSelect = $(".contenedorActivo h1").text()
-        localStorage.setItem("ciclo", cicloSelect);
-    } else {
-        alert("A ti que te pasa")
-    }
-    
-})
-
-
-//Habilitar boton "Siguiente" si hay un ciclo seleccionado.
-$(document).ready(() => {
-    (localStorage.getItem("ciclo") != undefined)?botonHabilitar():botonDeshabilitar()
-});
+//Habilitar boton "Siguiente" si hay un ciclo seleccionado al cargar la página.
+$(document).ready(() => {(localStorage.getItem("ciclo") != undefined)?botonHabilitar():botonDeshabilitar()});
 
 
 // Insercion de datos en el LocalStorage
 $("#btnSiguiente").click(() => {
    
-    $("").text(localStorage.getItem("ciclo")).addClass("contenedorActivo")
+    localStorage.setItem("ciclo", $(".contenedorActivo h1").text());
+    bNavegacionHabilitar(1)
 
 }) 

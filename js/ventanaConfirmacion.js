@@ -6,8 +6,8 @@ var arrayParametros = ["ciclo","nombre", "primerApellido", "segundoApellido",
 "codigoCentro", "curso", "viaAcceso"];
 
 
-for(var i = 0;i<20;i++)
-{
+for(var i = 0;i<20;i++){
+    
     // localStorage.getItem(arrayParametros[i])
     $("#" + arrayParametros[i]).text(localStorage.getItem(arrayParametros[i]))
     
@@ -15,16 +15,17 @@ for(var i = 0;i<20;i++)
 
 
 // Crear Matricula
-$(".btnConfirmar").click(function(){
+$("#btnConfirmar").click(function(){
 
     var uri = "https://proyecto-mdc-api.herokuapp.com/saveMatricula"
     console.log("URI: " + uri)
 
-    
+    // Mostrar datos LocalStorage
     for(var i = 0;i<20;i++){
         console.log(localStorage.getItem(arrayParametros[i]))
     }
 
+    // Envion de datos del LocalStorage por post
     $.post(uri, {
         ciclo:localStorage.getItem(arrayParametros[0]),
         nombre:localStorage.getItem(arrayParametros[1]),
@@ -53,9 +54,22 @@ $(".btnConfirmar").click(function(){
     
     })
 
+    // Eliminar datos LocalStorage
     for(var i = 0;i<20;i++){
         console.log(localStorage.removeItem(arrayParametros[i]))
     }
 
+    //Animacion Confirmar
+    Swal.fire({
+        type: 'success',
+        title: '¡Matrícula Creada!',
+        showConfirmButton: false,
+        timer: 1800,
+    })
+    //https://felisito16.github.io/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
+    //file:///C:/Users/lbarriga/Desktop/REPOSITORIO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
+
+    var enlace ="file:///C:/Users/lbarriga/Desktop/REPOSITORIO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html";
+    setTimeout(() => {location.href = enlace},2000)
 }) 
 

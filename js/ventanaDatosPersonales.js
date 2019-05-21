@@ -10,12 +10,14 @@ $('#fechaNacimiento').datepicker({
 $(document).ready(() => {
     var contadorRellenos = 0;
     var selectTipoDocumentacion = $("#tipoDocumentacion").val()
+
     $('.form-control').each(function() {
         if($(this).val()!= ""  && selectTipoDocumentacion != "Tipo Documentacion"  && selectTipoDocumentacion != null){
             contadorRellenos++;
             (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
         }
-    });
+    })
+    
 })
 
 
@@ -27,9 +29,9 @@ $('.form-control').keyup(() =>
     $('.form-control').each(function() {
         if($(this).val()!= "" && selectTipoDocumentacion != "Tipo Documentacion"  && selectTipoDocumentacion != null){
             contadorRellenos++;
-            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar() 
         }
-     });
+    });
 })
 
 
@@ -39,9 +41,9 @@ $('.form-control').change(() =>
     var contadorRellenos = 0;
     var selectTipoDocumentacion = $("#tipoDocumentacion").val()
     $('.form-control').each(function() {
-    if($(this).val()!= ""  && selectTipoDocumentacion != "Tipo Documentacion" && selectTipoDocumentacion != null){
-        contadorRellenos++;
-        (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+        if($(this).val()!= ""  && selectTipoDocumentacion != "Tipo Documentacion" && selectTipoDocumentacion != null){
+            contadorRellenos++;
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
         }
     });
 })
@@ -58,7 +60,9 @@ $("#btnSiguiente").click(() => {
     for(var i=0;i<14;i++)
     {
         localStorage.setItem(arrayParametros[i],$(".form-control:eq(" + i + ")").val())
+        
     }
+    bNavegacionHabilitar(2)
 })
 
 

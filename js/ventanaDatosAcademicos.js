@@ -3,10 +3,11 @@ $(document).ready(() => {
     var contadorRellenos = 0;
     var selectCurso = $("#curso").val()
     var selectViaAcceso = $("#viaAcceso").val()
+
     $('.form-control').each(function() {
-    if($(this).val()!= "" && selectCurso != "Curso Matriculación" && selectCurso != null && selectViaAcceso != "Vía Acceso" && selectViaAcceso != null){
-        contadorRellenos++;
-        (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
+        if($(this).val()!= "" && selectCurso != "Curso Matriculación" && selectCurso != null && selectViaAcceso != "Vía Acceso" && selectViaAcceso != null){
+            contadorRellenos++;
+            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
         }
     });
 })
@@ -23,7 +24,7 @@ $('.form-control').keyup(() =>
             contadorRellenos++;
             (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
         }
-     });
+    });
 })
 
 
@@ -34,9 +35,9 @@ $('.form-control').change(() =>
     var selectCurso = $("#curso").val()
     var selectViaAcceso = $("#viaAcceso").val()
     $('.form-control').each(function() {
-    if($(this).val()!= "" && selectCurso != "Curso Matriculación" && selectCurso != null && selectViaAcceso != "Vía Acceso" && selectViaAcceso != null){
-        contadorRellenos++;
-        (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
+        if($(this).val()!= "" && selectCurso != "Curso Matriculación" && selectCurso != null && selectViaAcceso != "Vía Acceso" && selectViaAcceso != null){
+            contadorRellenos++;
+            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
         }
     });
 })
@@ -52,5 +53,6 @@ $("#btnSiguiente").click(() => {
     {
         localStorage.setItem(arrayParametros[i],$(".form-control:eq(" + i + ")").val())
     }
+    bNavegacionHabilitar(3)
 })
 

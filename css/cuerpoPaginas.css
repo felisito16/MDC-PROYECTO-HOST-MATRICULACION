@@ -163,11 +163,6 @@ nav a:hover {
     color: white;
 }
 
-a[class*="bloqueado"]{
-    pointer-events: none;
-    background: rgb(175, 189, 197);
-}
-
 @-webkit-keyframes jello-vertical {
     0% {
       -webkit-transform: scale3d(1, 1, 1);
