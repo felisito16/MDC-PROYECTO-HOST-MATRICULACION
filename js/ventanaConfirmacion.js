@@ -19,8 +19,12 @@ $("#btnConfirmar").click(function(){
 
     var uri = "https://proyecto-mdc-api.herokuapp.com/saveMatricula"
     console.log("URI: " + uri)
+<<<<<<< Updated upstream
 
     // Mostrar datos LocalStorage
+=======
+    
+>>>>>>> Stashed changes
     for(var i = 0;i<20;i++){
         console.log(localStorage.getItem(arrayParametros[i]))
     }
@@ -69,7 +73,7 @@ $("#btnConfirmar").click(function(){
     //https://felisito16.github.io/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
     //file:///C:/Users/lbarriga/Desktop/REPOSITORIO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
 
-    var enlace ="https://felisito16.github.io/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html";
+    var enlace ="file:///C:/Users/lbarriga/Desktop/REPOSITORIO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html";
     setTimeout(() => {location.href = enlace},2000)
 }) 
 
