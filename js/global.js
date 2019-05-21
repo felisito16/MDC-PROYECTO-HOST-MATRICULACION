@@ -30,8 +30,9 @@ function bNavegacionHabilitar(numeroA){
 //Funcion Deshabilitar Barra Navegacion
 function bNavegacionDeshabilitar(numeroA){
 
-    $(".nav-item:eq(" + numeroA + ")").attr("style","cursor: not-allowed;pointer-events: none;background-color:rgb(175, 189, 197)");
     $(".nav-item:eq(" + numeroA + ")").attr("title","Rellena todos los campos para seguir con el proceso de matriculación.");
+    $(".nav-item:eq(" + numeroA + ")").attr("style","cursor: not-allowed;pointer-events: none;background-color:rgb(175, 189, 197)");
+    
 
 }
 
@@ -109,40 +110,6 @@ $(document).ready(() => {
 });
 
 
-/* ¡¡¡¡¡   MEJORAR   !!!!!! */
-
-// var i = 0;
-// var nombre = new RegExp('^[a-zA-Z]+$');
-// var primerApellido = new RegExp('^[a-zA-Z]+$');
-
-// var arrayExpresiones = [nombre,primerApellido]
-
-// var arrayParametros = ['nombre', 'primerApellido'];
-
-// for(var i = 0;i<2;i++)
-// {
-//     $('#' + arrayParametros[i]).change(function(){
-
-//         if($('#'  + arrayParametros[i]).val() == "")
-//         {
-//             $('#' + arrayParametros[i]).removeClass("campoValidar")
-//             $('#' + arrayParametros[i]).removeClass("campoInvalidar")
-//         }
-//         else
-//         {
-//             if(arrayExpresiones[i].test($('#' + arrayParametros[i] + "").val()) == true)
-//             {
-//                 $('#' + arrayParametros[i]).removeClass("campoInvalidar")
-//                 $('#' + arrayParametros[i]).addClass("campoValidar")
-//             }
-//             else
-//             {
-//                 $('#' + arrayParametros[i]).removeClass("campoValidar")
-//                 $('#' + arrayParametros[i]).addClass("campoInvalidar")
-//             }
-//         }
-//     })
-// }
 
 
 
