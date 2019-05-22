@@ -68,7 +68,7 @@ $("#btnConfirmar").click(function(){
     //https://felisito16.github.io/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
     //file:///C:/Users/Luis/Desktop/REPOSITORIO%20PROYECTO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html
 
-    var enlace ="file:///C:/Users/Luis/Desktop/REPOSITORIO%20PROYECTO/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html";
+    var enlace ="https://felisito16.github.io/MDC-PROYECTO-HOST-MATRICULACION/ventanaCiclos.html";
     setTimeout(() => {location.href = enlace},2000)
 }) 
 

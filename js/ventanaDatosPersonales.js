@@ -10,14 +10,13 @@ $('#fechaNacimiento').datepicker({
 $(document).ready(() => {
     var contadorRellenos = 0;
     $('.form-control').each(function() {
-        if($(this).val()!=""){
+        if($(this).val()!=""  && $(this).val() != "Tipo Documentacion"){
             $(this).addClass("campoValidar")
             contadorRellenos++;
+        }
             (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
             console.log(contadorRellenos)
-        }
     })
-    
 })
 
 
@@ -28,9 +27,10 @@ $('.form-control').keyup(() =>
     $('.form-control').each(function() {
         if($(this).hasClass("campoValidar") && $(this).val()!=""){
             contadorRellenos++;
+        }
             (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
             console.log(contadorRellenos)
-        }
+        
     })
 })
 
@@ -42,21 +42,17 @@ $('.form-control').change(() =>
     $('.form-control').each(function() {
         if($(this).hasClass("campoValidar") && $(this).val()!=""){
             contadorRellenos++;
+        }
             (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
             console.log(contadorRellenos)
-        }
+        
     })
 })
 
 
-// Insercion de datos en el LocalStorage
-var arrayParametros = ["nombre", "primerApellido", "segundoApellido",
-                        "fechaNacimiento", "tipoDocumentacion", "numDNI", "nacionalidad",
-                        "provincia", "nombreLocalidad", "cpLocalidad",
-                        "calleDom", "numeroDom", "telefono", "email"];
 
-var texto = new RegExp(/^[ñA-Za-z _]*[ñA-Za-z][ñA-Za-z _]*$/);
-var telefono = new RegExp(/^[0-9/+-]*$/);
+var texto = new RegExp(/[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]/);
+var telefono = new RegExp(/^[9|6]{1}([\d]{2}[-]*){3}[\d]{2}$/);
 var textoNumeroSimbolo = new RegExp(/^[ A-Za-z0-9_@./#&+-]*$/);
 var fecha = new RegExp(/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i);
 var nif = new RegExp(/^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKET]{1}$/);
@@ -98,8 +94,8 @@ $('.form-control').each(function(index) {
 
                 case 3 : 
                 (fecha.test($(this).val()) == true)
-                ?$(this).removeClass("campoInvalidar").addClass("campoValidar")
-                :$(this).removeClass("campoValidar").addClass("campoInvalidar")
+                ?$(this).removeClass("campoInvalidar").addClass("campoValidar").select()
+                :$(this).removeClass("campoValidar").addClass("campoInvalidar")                
                 break;
 
                 case 5:
@@ -122,9 +118,6 @@ $('.form-control').each(function(index) {
 
             }
         }
-
-        
-
     })
 
     $(this).change(function(){
@@ -140,7 +133,7 @@ $('.form-control').each(function(index) {
             {
                 case 3 : 
                 (fecha.test($(this).val()) == true)
-                ?$(this).removeClass("campoInvalidar").addClass("campoValidar")
+                ?$(this).removeClass("campoInvalidar").addClass("campoValidar").select()
                 :$(this).removeClass("campoValidar").addClass("campoInvalidar")
                 break;
                 
@@ -154,6 +147,12 @@ $('.form-control').each(function(index) {
     })
 })
 
+
+// Insercion de datos en el LocalStorage
+var arrayParametros = ["nombre", "primerApellido", "segundoApellido",
+                        "fechaNacimiento", "tipoDocumentacion", "numDNI", "nacionalidad",
+                        "provincia", "nombreLocalidad", "cpLocalidad",
+                        "calleDom", "numeroDom", "telefono", "email"];
 
 $("#btnSiguiente").click(() => {
 
