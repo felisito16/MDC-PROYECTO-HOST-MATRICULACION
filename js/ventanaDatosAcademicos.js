@@ -5,43 +5,17 @@ $(document).ready(() => {
         if($(this).val()!=""  && $(this).val() != "Curso Matriculación" && $(this).val() != "Vía Acceso" ){
             $(this).addClass("campoValidar")
             contadorRellenos++;
+        
             (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
             console.log(contadorRellenos)
         }
     })
 })
 
-
-// Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla (input)
-$('.form-control').keyup(() => 
-{
-    var contadorRellenos = 0;
-    $('.form-control').each(function() {
-        if($(this).hasClass("campoValidar") && $(this).val()!=""){
-            contadorRellenos++;
-            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
-            console.log(contadorRellenos)
-        }
-    })
-})
-
-
-// Habilitar boton "Siguiente" si estan todos los campos rellenos al producirse un cambio (select)
-$('.form-control').change(() => 
-{
-    var contadorRellenos = 0;
-    $('.form-control').each(function() {
-        if($(this).hasClass("campoValidar") && ($(this).val() != "Curso Matriculación" || $(this).val() != "Vía Acceso" )){
-            contadorRellenos++;
-            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
-            console.log(contadorRellenos)
-        }
-    })
-})
 
 
 var texto = new RegExp(/[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]/);
-
+var numeros = new RegExp(/^[0-9]*$/);
 
 // Validacion de campos
 $('.form-control').each(function(index) {
@@ -63,7 +37,7 @@ $('.form-control').each(function(index) {
                 break;
 
                 case 2 :
-                (texto.test($(this).val()) == true)
+                (numeros.test($(this).val()) == true)
                 ?$(this).removeClass("campoInvalidar").addClass("campoValidar")
                 :$(this).removeClass("campoValidar").addClass("campoInvalidar")
                 break;
@@ -83,7 +57,7 @@ $('.form-control').each(function(index) {
         {
             switch(index)
             {
-                case 3 : case 4:
+                case 3 : case 4 :
                 (texto.test($(this).val()) == true)
                 ?$(this).removeClass("campoInvalidar").addClass("campoValidar")
                 :$(this).removeClass("campoValidar").addClass("campoInvalidar")
@@ -92,6 +66,38 @@ $('.form-control').each(function(index) {
         }
     })
 })
+
+
+
+
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla (input)
+$('.form-control').keyup(() => 
+{
+    var contadorRellenos = 0;
+    $('.form-control').each(function() {
+        if($(this).hasClass("campoValidar")){
+            contadorRellenos++;
+            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
+            console.log(contadorRellenos)
+        }
+        
+    })
+})
+
+
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al producirse un cambio (select)
+$('.form-control').change(() => 
+{
+    var contadorRellenos = 0;
+    $('.form-control').each(function() {
+        if($(this).hasClass("campoValidar")){
+            contadorRellenos++;
+            (contadorRellenos == 5)?botonHabilitar():botonDeshabilitar()
+            console.log(contadorRellenos)
+        }
+    })
+})
+
 
 
 

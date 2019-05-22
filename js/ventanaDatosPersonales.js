@@ -13,42 +13,12 @@ $(document).ready(() => {
         if($(this).val()!=""  && $(this).val() != "Tipo Documentacion"){
             $(this).addClass("campoValidar")
             contadorRellenos++;
-        }
-            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
-            console.log(contadorRellenos)
-    })
-})
-
-
-// Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla en un input
-$('.form-control').keyup(() =>
-{
-    var contadorRellenos = 0;
-    $('.form-control').each(function() {
-        if($(this).hasClass("campoValidar") && $(this).val()!=""){
-            contadorRellenos++;
-        }
-            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
-            console.log(contadorRellenos)
         
-    })
-})
-
-
-// Habilitar boton "Siguiente" si estan todos los campos rellenos al producirse un cambio en el select
-$('.form-control').change(() =>
-{
-    var contadorRellenos = 0;
-    $('.form-control').each(function() {
-        if($(this).hasClass("campoValidar") && $(this).val()!=""){
-            contadorRellenos++;
-        }
             (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
             console.log(contadorRellenos)
-        
+        }
     })
 })
-
 
 
 var texto = new RegExp(/[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]/);
@@ -143,6 +113,37 @@ $('.form-control').each(function(index) {
                 :$(this).removeClass("campoValidar").addClass("campoInvalidar")
                 break;
             }
+        }
+    })
+})
+
+
+
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla en un input
+$('.form-control').keyup(() =>
+{
+    var contadorRellenos = 0;
+    $('.form-control').each(function() {
+        if($(this).hasClass("campoValidar") && $(this).val()!="" && $(this).val() != "Tipo Documentacion"){
+            contadorRellenos++;
+        
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+            console.log(contadorRellenos)
+        }
+    })
+})
+
+
+// Habilitar boton "Siguiente" si estan todos los campos rellenos al producirse un cambio en el select
+$('.form-control').change(() =>
+{
+    var contadorRellenos = 0;
+    $('.form-control').each(function() {
+        if($(this).hasClass("campoValidar") && $(this).val() != "Tipo Documentacion"){
+            contadorRellenos++;
+        
+            (contadorRellenos == 14)?botonHabilitar():botonDeshabilitar()
+            console.log(contadorRellenos)
         }
     })
 })
