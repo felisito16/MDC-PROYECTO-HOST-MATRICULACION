@@ -1,7 +1,6 @@
 //Funcion Habilitar Boton
 function botonHabilitar() {
 
-    //Boton Siguiente
     $("#btnSiguiente").removeAttr("disabled").removeAttr("style").removeAttr("title");
     $("#btnSiguiente").attr("style","-webkit-animation:jello-vertical 0.9s both;animation:jello-vertical 0.9s both")
     $("#btnSiguiente").mouseover(function() {$(this).css("background-color","rgb(7, 148, 14)")})
