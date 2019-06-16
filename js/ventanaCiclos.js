@@ -22,13 +22,13 @@ $(".contenedorModulo:eq(2)").click(() => {botonHabilitar()})
 
 
 //Habilitar boton "Siguiente" si hay un ciclo seleccionado al cargar la página.
-$(document).ready(() => {(localStorage.getItem("ciclo") != undefined)?botonHabilitar():botonDeshabilitar()});
+$(document).ready(() => {(sessionStorage.getItem("ciclo") != undefined)?botonHabilitar():botonDeshabilitar()});
 
 
 // Insercion de datos en el LocalStorage
 $("#btnSiguiente").click(() => {
    
-    localStorage.setItem("ciclo", $(".contenedorActivo h1").text());
+    sessionStorage.setItem("ciclo", $(".contenedorActivo h1").text());
     bNavegacionHabilitar(1)
 
 }) 

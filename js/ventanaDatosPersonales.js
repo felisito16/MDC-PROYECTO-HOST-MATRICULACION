@@ -149,7 +149,7 @@ $('.form-control').change(() =>
 })
 
 
-// Insercion de datos en el LocalStorage
+// Insercion de datos en el sessionStorage
 var arrayParametros = ["nombre", "primerApellido", "segundoApellido",
                         "fechaNacimiento", "tipoDocumentacion", "numDNI", "nacionalidad",
                         "provincia", "nombreLocalidad", "cpLocalidad",
@@ -159,7 +159,7 @@ $("#btnSiguiente").click(() => {
 
     for(var i=0;i<14;i++)
     {
-        localStorage.setItem(arrayParametros[i],$(".form-control:eq(" + i + ")").val())
+        sessionStorage.setItem(arrayParametros[i],$(".form-control:eq(" + i + ")").val())
         
     }
     bNavegacionHabilitar(2)

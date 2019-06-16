@@ -48,7 +48,7 @@ $(document).ready(() => {
     {
 
         // Añadir clase "contenedorActivo" a div de ciclo seleccionado
-        switch(localStorage.getItem(arrayParametros[0]))
+        switch(sessionStorage.getItem(arrayParametros[0]))
         {
             case "DAM": $(".contenedorModulo:eq(0)").addClass("contenedorActivo")
             break;
@@ -60,18 +60,18 @@ $(document).ready(() => {
 
 
         // Obtencion de datos del LocalStorage
-        $("#" + arrayParametros[i]).val(localStorage.getItem(arrayParametros[i]))
+        $("#" + arrayParametros[i]).val(sessionStorage.getItem(arrayParametros[i]))
 
 
         // Añadir valor a select  Tipo Documentacion si es nulo
-        if(localStorage.getItem("tipoDocumentacion") == null)
+        if(sessionStorage.getItem("tipoDocumentacion") == null)
         {
             $("#tipoDocumentacion").val("Tipo Documentacion")
         }
 
 
         // Añadir valor a select  Curso y Vía de Acceso si es nulo
-        if(localStorage.getItem("curso") == null && localStorage.getItem("viaAcceso") == null)
+        if(sessionStorage.getItem("curso") == null && sessionStorage.getItem("viaAcceso") == null)
         {
             $("#curso").val("Curso Matriculación")
             $("#viaAcceso").val("Vía Acceso")
@@ -79,7 +79,7 @@ $(document).ready(() => {
 
 
         // Deshabilitar Barra Navegacion
-        if(localStorage.getItem(arrayParametros[i]) == undefined && i == 0)
+        if(sessionStorage.getItem(arrayParametros[i]) == undefined && i == 0)
         {
             for(var a = 1;a<6;a++)
             {
@@ -87,7 +87,7 @@ $(document).ready(() => {
             }
         }
 
-        else if(localStorage.getItem(arrayParametros[i]) == undefined && i > 1 && i==14)
+        else if(sessionStorage.getItem(arrayParametros[i]) == undefined && i > 1 && i==14)
         {
             for(var e = 2;e<6;e++)
             {
@@ -95,7 +95,7 @@ $(document).ready(() => {
             }
         }
 
-        else if(localStorage.getItem(arrayParametros[i]) == undefined && i > 14 && i==19)
+        else if(sessionStorage.getItem(arrayParametros[i]) == undefined && i > 14 && i==19)
         {
             for(var o = 3;o<6;o++)
             {
