@@ -32,7 +32,6 @@ function bNavegacionDeshabilitar(numeroA){
     $(".nav-item:eq(" + numeroA + ")").attr("title","Rellena todos los campos para seguir con el proceso de matriculación.");
     $(".nav-item:eq(" + numeroA + ")").attr("style","cursor: not-allowed;pointer-events: none;background-color:rgb(175, 189, 197)");
     
-
 }
 
 

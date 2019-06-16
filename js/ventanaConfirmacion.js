@@ -13,6 +13,7 @@ for(var i = 0;i<20;i++){
     
 }
 
+$("#btnConfirmar").attr("style","-webkit-animation:jello-vertical 0.9s both;animation:jello-vertical 0.9s both");
 
 // Crear Matricula
 $("#btnConfirmar").click(function(){
