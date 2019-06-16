@@ -1,6 +1,7 @@
 $(document).ready(() => {
 
-        bNavegacionDeshabilitar(5)
+    botonHabilitar($("#btnSiguiente"));
+    bNavegacionDeshabilitar(5)
     
 })
 
