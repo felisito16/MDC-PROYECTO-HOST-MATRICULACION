@@ -1,10 +1,10 @@
 .contenedorContenidioFormulario{
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center
 }
 
 .contenedorContenidioFormulario img{
-    width: 100vh;
-    height:55vh;
+  width: 100vh;
+  height:55vh;
 }

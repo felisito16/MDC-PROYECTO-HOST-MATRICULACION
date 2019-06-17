@@ -27,8 +27,6 @@ $(document).ready(() => {(sessionStorage.getItem("ciclo") != undefined)?botonHab
 
 // Insercion de datos en el LocalStorage
 $("#btnSiguiente").click(() => {
-   
     sessionStorage.setItem("ciclo", $(".contenedorActivo h1").text());
     bNavegacionHabilitar(1)
-
 }) 

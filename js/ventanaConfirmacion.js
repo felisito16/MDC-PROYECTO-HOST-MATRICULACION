@@ -7,10 +7,8 @@ var arrayParametros = ["ciclo","nombre", "primerApellido", "segundoApellido",
 
 
 for(var i = 0;i<20;i++){
-    
     // sessionStorage.getItem(arrayParametros[i])
     $("#" + arrayParametros[i]).text(sessionStorage.getItem(arrayParametros[i]))
-    
 }
 
 $("#btnConfirmar").attr("style","-webkit-animation:jello-vertical 0.9s both;animation:jello-vertical 0.9s both");

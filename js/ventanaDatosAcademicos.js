@@ -1,3 +1,7 @@
+var texto = new RegExp(/[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]/);
+var numeros = new RegExp(/^[0-9]*$/);
+
+
 //Habilitar boton "Siguiente" si estan todos los campos rellenos al cargar la página.
 $(document).ready(() => {
     var contadorRellenos = 0;
@@ -12,10 +16,6 @@ $(document).ready(() => {
     })
 })
 
-
-
-var texto = new RegExp(/[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]/);
-var numeros = new RegExp(/^[0-9]*$/);
 
 // Validacion de campos
 $('.form-control').each(function(index) {
@@ -69,7 +69,6 @@ $('.form-control').each(function(index) {
 
 
 
-
 // Habilitar boton "Siguiente" si estan todos los campos rellenos al levantar una tecla (input)
 $('.form-control').keyup(() => 
 {
@@ -97,9 +96,6 @@ $('.form-control').change(() =>
         }
     })
 })
-
-
-
 
 
 // Insercion de datos en el sessionStorage
